@@ -1,0 +1,19 @@
+{
+    "name": "BGHRFFTool",
+    "description": "Tooldu Qaqa",
+    "keywords": [
+        "tool",
+        "bghrff",
+        "bghrffdansurpriz",
+        "surprise"
+    ],
+    "repository": "https://github.com/BGHRFF/Tool",
+    "success_url": "https://github.com/BGHRFF/Tool",
+    "stack": "container",
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
