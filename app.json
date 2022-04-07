@@ -9,7 +9,7 @@
     ],
     "repository": "https://github.com/BGHRFF/Tool",
     "success_url": "https://github.com/BGHRFF/Tool",
-    "stack": "container",
+    "stack": "heroku-20",
     "formation": {
         "worker": {
             "quantity": 1,
