@@ -51,13 +51,13 @@ async def Subscribe(lel, message):
       try:
          user = await app.get_chat_member(update_channel, message.chat.id)
          if user.status == "kicked":
-            await app.send_message(chat_id=message.chat.id,text="Sorry Sir, You are Banned. Contact My [Support Group](https://t.me/InducedBotsSupport).", parse_mode="markdown", disable_web_page_preview=True)
+            await app.send_message(chat_id=message.chat.id,text="Siz Banlanmısınız. [Sahibim](https://t.me/TheBaghirov) ilə əlaqə saxlayın .", parse_mode="markdown", disable_web_page_preview=True)
             return 1
       except UserNotParticipant:
-         await app.send_message(chat_id=message.chat.id, text="**Please Join My Updates Channel To Use Me!\n and click on to Check /start**", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🤖 Join Updates Channel 🤖", url=f"https://t.me/{update_channel}")]]), parse_mode="markdown")
+         await app.send_message(chat_id=message.chat.id, text="**Məni istifadə etmək üçün yeniliklər kanalına abunə olun!\n və /start üzərinə klikləyin**", reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("🤖 Join Updates Channel 🤖", url=f"https://t.me/{update_channel}")]]), parse_mode="markdown")
          return 1
       except Exception:
-         await app.send_message(chat_id=message.chat.id, text="**Something Went Wrong. Contact My [Support Group](https://t.me/InducedBotsSupport).**", parse_mode="markdown", disable_web_page_preview=True)
+         await app.send_message(chat_id=message.chat.id, text="**Nə isə səhv getdi. Mənim [Sahibim](https://t.me/TheBaghirov) ilə əlaqə saxlayın.**", parse_mode="markdown", disable_web_page_preview=True)
          return 1
 
 
